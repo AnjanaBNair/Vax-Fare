@@ -1,0 +1,36 @@
+
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdtimepicker@0.5.7/dist/mdtimepicker.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdtimepicker@0.5.7/dist/mdtimepicker.min.js"></script>
+<script>
+    $(document).ready(function() {
+      var input = $('#myTime');
+      var button = $('#myTimeButton');
+      
+      button.on('click', function() {
+        input.mdtimepicker();
+      });
+    });
+  </script>
+<script>
+    $(document).ready(function() {
+      var input = $('#myTime');
+      var button = $('#myTimeButton');
+      
+      button.on('click', function() {
+        input.mdtimepicker({
+          format: 'hh:mm A'
+        });
+      });
+    });
+  </script>
+    
+</head>
+<body>
+    <input type="text" id="myTime" />
+    <button id="myTimeButton">Select Time</button>
+    
+</body>
+</html>
